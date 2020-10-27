@@ -17,9 +17,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-import static io.appium.java_client.touch.offset.ElementOption.element;
-import static java.time.Duration.ofSeconds;
-
 public class ProductSearch {
 
     private static AndroidDriver<AndroidElement> driver;
