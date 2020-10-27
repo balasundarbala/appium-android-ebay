@@ -1,5 +1,6 @@
 package pages;
 
+import configs.Constants;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -25,7 +26,7 @@ public class ProductSearch {
     public ProductSearch( AndroidDriver<AndroidElement> driver) {
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
-        wait = new WebDriverWait(driver, 120);
+        wait = new WebDriverWait(driver, Constants.LONG);
     }
 
     @FindBy(id="search_box")
